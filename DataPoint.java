@@ -1,5 +1,3 @@
-import org.jblas.*;
-
 public class DataPoint {
 
   public double[]
@@ -17,8 +15,6 @@ public class DataPoint {
   public double
       predictedProb; // if this data point is part of the test set, this is where we store the
   // probability with which we make our prediction
-  public DoubleMatrix
-      vectorLabel; // this is where you store a binary vector version of the actual label
 
   /////////////////////////////////////////////////////////////////
   // constructor
@@ -88,15 +84,4 @@ public class DataPoint {
   }
   //////////////////////////////////////////////////////////////////
 
-  //////////////////////////////////////////////////////////////////
-  public void setVectorLabel(DoubleMatrix vectorLabel) {
-    this.vectorLabel = vectorLabel;
-  }
-  //////////////////////////////////////////////////////////////////
-
-  //////////////////////////////////////////////////////////////////
-  public DoubleMatrix getVectorLabel() {
-    return vectorLabel;
-  }
-  //////////////////////////////////////////////////////////////////
 }
