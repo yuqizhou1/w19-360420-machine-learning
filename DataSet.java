@@ -242,7 +242,7 @@ public class DataSet {
               + ", label = "
               + i.getLabel()
               + ", label as vector: "
-              + Arrays.toString(i.getVectorLabel().toArray()));
+              + Arrays.toString(i.getX()));
     }
   }
   ////////////////////////////////////////////////////////////////////////////
