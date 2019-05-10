@@ -29,5 +29,5 @@ Most importantly, we want to characterize
  - the amount of confidence we can put in our model
  - the types of errors that our classifier makes
 
-[Precision and Recall](/Precisionrecall.svg?raw=true "Optional Title")
+![Precision & Recall](/Precisionrecall.jpg?raw=true "Optional Title")
 By <a href="//commons.wikimedia.org/wiki/User:Walber" title="User:Walber">Walber</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=36926283">Link</a>
