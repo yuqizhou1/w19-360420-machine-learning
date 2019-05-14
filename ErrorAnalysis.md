@@ -5,7 +5,7 @@
 ## Distributions of Model Accuracy
 - Each time we run the model, our functions shuffles the data set available. After shuffling, all the numbers are in a completely different order than the previous run. Therefore, in every run, when we separate training set and test set after this step, there is a different test set and a different training set. After training with a different dataset, for some test points, the nearest neighbors might provide different answers, thus, the shuffling of the data and thus the randomness of the data in the training set and in the test set contributes to this variance in accuracy. 
 - We did it 😊
-- On average, our model’s accuracy is _______%, with a standard deviation of _________. 
+- On average, our model’s accuracy is 99.633%, with a standard deviation of 2.01E-24. 
    - We can compare our model’s performance to the basic frequency that each label appears. For example, in this case, the label benign appears at a frequency of ____% and the label malignant appears at a frequency of _____%. Therefore, if we chose to refer ourselves to the label fo
 
 
