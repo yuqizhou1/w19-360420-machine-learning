@@ -1,7 +1,21 @@
-# Title
-## Course - Section
-## Authors
+# Error Analysis
+## 360-420-DW - 0001
+## Yu Shi Wang & Yu Qi Zhou
 
 ## Distributions of Model Accuracy
+- Each time we run the model, our functions shuffles the data set available. After shuffling, all the numbers are in a completely different order than the previous run. Therefore, in every run, when we separate training set and test set after this step, there is a different test set and a different training set. After training with a different dataset, for some test points, the nearest neighbors might provide different answers, thus, the shuffling of the data and thus the randomness of the data in the training set and in the test set contributes to this variance in accuracy. 
+- We did it 😊
+- On average, our model’s accuracy is _______%, with a standard deviation of _________. 
+   - We can compare our model’s performance to the basic frequency that each label appears. For example, in this case, the label benign appears at a frequency of ____% and the label malignant appears at a frequency of _____%. Therefore, if we chose to refer ourselves to the label fo
+
 
 ## Analysis of different error types
+
+- A **false positive** is an error that occurs when the classifier indicates the presence of something when the latter is actually absent. For example, in our dataset, if someone doesn’t have malignant cancer but the classifier indicates that the person has malignant cancer, it is a false positive. 
+- A **false negative** is an error that occurs when the classifier indicates the absence of something when the latter is actually present. Once again, for our dataset, for example, if the classifier indicates that the person doesn’t have malignant cancer but the person actually has malignant cancer, it is a false negative. 
+- **Precision** refers to the accuracy of the elements selected by the classifier. Precision evaluates the number of rightly classified elements versus the number of elements that the classifier has identified as being positive. To calculate the precision, we divide the number of true positives by the sum of true positives and false positives. In our case, precision would refer to, among the people who have been classified as having malignant cancer, how many actually have malignant cancer. To calculate this precision, we would divide the number of people having malignant cancer and having been classified as so by the sum of people that have been classified as having malignant cancer. In our case, the precision is _____________________. A sensible baseline for the precision would be __________________ as _________________________________. 
+- On the other hand, **recall** refers to the number of relevant items that the classifier has selected. Recall evaluates the number of items right classified rightly in a certain category versus the number of items that are supposed to be in that category. For example, in our case, recall evaluates how many people having malignant cancer have been classified as having malignant cancer. To evaluate recall, we divide the number of true positives by the sum of false negatives and true positives. In our case, we would divide the number of people having malignant cancer and having identified as having malignant cancer divided by the sum of the people having malignant cancer and having been identified as having malignant cancer and the people having malignant cancer but having been identified as not having malignant cancer. In our case, the recall is __________. However, a sensible baseline for recall would be __________ as ______________________________________. 
+- The hyperparameter k represents the number of nearest neighbours that the algorithm will take to evaluate the class in which the item belongs in. The class with the highest number of nearest neighbours in the group of nearest neighbours taken with the parameter k will be the class in which the item will be classed into. The higher the number of k, the more datapoints we will take to evaluate. In this case, the accuracy suffers as the error will be higher as more data points will be identified. In this case, true positives will become a higher number, thus the recall will be higher. However, at the same time the more points we take, the precision will suffer as more items might be identified as positive and thus, there is a higher probability of having a false positive. On the other hand, if the hyperparameter k is too small (i.e. 1), items that are on the edge of the regions of each class might have a difficult time getting identified accurately. 
+	
+
+
